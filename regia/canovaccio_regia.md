@@ -30,6 +30,7 @@ Deck: `deck/deck.html` (online) o `deck/deck.pdf` (chiavetta). Pagina materiali:
 - Rivedi su 7 slide (cambio tema) dura oltre 13 minuti, non 2: in aula, Rivedi su **una** slide alla volta.
 - Anche il **.pptx** scaricato è fatto di 7 immagini, senza testo modificabile.
 - Un'**immagine non si aggiunge via URL** (i link Wikimedia falliscono): va caricata come file.
+- **Rivedi non usa fonti aggiunte dopo**: foto caricate, Rivedi su A "usa la foto caricata" → fallito due volte. La foto entra solo con una nuova generazione (giro 2).
 - Stesso prompt B su due account → due deck diversi (uno con titoli-etichetta nonostante la regola).
 
 ## I tuoi deck di demo (notebook UNIPG, "Notebook senza titolo")
@@ -41,6 +42,8 @@ Deck: `deck/deck.html` (online) o `deck/deck.pdf` (chiavetta). Pagina materiali:
 | C0 | *Architectural Palimpsests and Resilience* (palette pietra) | tema da codici hex rispettato; timeline con testo duplicato |
 | C0 (2) | revisione Rivedi della slide 1 | prima/dopo |
 | C | B + tema UNIPG applicato con Rivedi, slide per slide | stesse parole di B, cambia solo la veste |
+
+Nel notebook i deck ora si chiamano: **A · one-line prompt**, **1 · prompt B, content rules**, **2 · deck 1 + UNIPG theme, via Rivedi**, **C0 · limestone palette**, **C0 · limestone palette, after Rivedi on slide 1**. Le due righe "Revisione non riuscita" sono le prove con la foto: lasciale, o eliminale tu.
 
 I PDF di tutti i deck sono in `generated/`, e online nella pagina dei materiali.
 

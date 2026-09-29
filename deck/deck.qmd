@@ -443,18 +443,18 @@ Once uploaded, the deck **is a source**: the model treats it as true as the arti
 ## Trick · Give it the real picture instead of letting it draw one
 
 :::: {.columns}
-::: {.column width="50%"}
+::: {.column width="45%"}
 ![](../fonti/duomo_siracusa_facciata.jpg){.shot}
 [Façade, Guillaume, CC BY 2.0, Wikimedia Commons]{.caption}
 :::
-::: {.column width="50%"}
+::: {.column width="55%"}
 Deck A drew a cathedral. The real one is on Wikimedia Commons, with a licence.
 
 - **Add sources → Upload file** → the photo. An image **cannot** be added by URL: the link fails.
-- In prompt C: *"for the cathedral use only the uploaded photographs, credited on the slide; never generate an image of the building"*
+- The photo works only in a **new generation**: round 2, prompt C.
 
-::: {.muted .small}
-Both photos, with credits, are on the materials page.
+::: {.note-bad}
+We tried the shortcut this morning: photos uploaded, then Rivedi on deck A *"use the uploaded photograph instead of the generated image"*. **Failed twice.** Rivedi works only on the sources the deck was born with: the screen says *"in base a 1 fonte"*.
 :::
 :::
 ::::
@@ -568,6 +568,7 @@ Open the deck → **Rivedi** → click a slide → write one instruction → *Ge
 ::: {.note-bad}
 **Rivedi does not read the sources**
 
+- not even new ones: a photo added later is ignored
 - it cannot check if a claim is true
 - it can make a wrong claim sound better
 - what is *said* is fixed in chat, with the citations open, then you regenerate

@@ -41,3 +41,4 @@ Restyle only, keep every word, diagram and the layout: white background #FFFFFF;
 - Source: the direct PDF link https://journal.eahn.org/article/7590/galley/21444/download/ imports fine as a "website" source.
 
 - Images cannot be added as sources by URL (both Wikimedia links failed): upload them as files.
+- Photos uploaded as files after the decks existed; Rivedi on deck A asked to use them: **failed twice** ("Revisione della presentazione non riuscita"). Rivedi runs "in base a 1 fonte": only the sources the deck was generated from. New sources need a new generation.
