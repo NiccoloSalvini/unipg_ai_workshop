@@ -209,7 +209,7 @@ Overleaf compiles it in the browser. Many conferences give you a `.sty` theme: t
 An AI tool has no theme file. The prompt *is* the theme file.
 :::
 
-## [Part 2]{.section-kicker} One article, three decks, one tool {.section-slide background-color="#27348B"}
+## [Part 2]{.section-kicker} One article, two decks, one tool {.section-slide background-color="#27348B"}
 
 ## One rule for the hour
 
