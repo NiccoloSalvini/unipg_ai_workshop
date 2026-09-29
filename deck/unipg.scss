@@ -1,0 +1,86 @@
+/*-- scss:defaults --*/
+// UNIPG revealjs theme. Colours and font read from unipg.it (custom.min.css and /files/logo/logo.svg):
+// blue #27348B, red #E30613, grey #8D8F95, light grey #E8E8E8, Roboto.
+// Same structure as ese-ai/lectures/ese.scss: the look lives here, never in the slides.
+
+$blue:    #27348B;
+$bluedk:  #1c2566;
+$red:     #E30613;
+$grey:    #8D8F95;
+$light:   #E8E8E8;
+$ink:     #231F20;
+$paper:   #ffffff;
+$codebg:  #f6f7fa;
+
+$font-family-sans-serif: "Roboto", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+$font-family-monospace:  "Roboto Mono", "SF Mono", Menlo, Consolas, monospace;
+$presentation-font-size-root: 30px;
+$presentation-line-height: 1.4;
+$presentation-heading-font: $font-family-sans-serif;
+$presentation-heading-color: $blue;
+$presentation-heading-font-weight: 700;
+$presentation-heading-line-height: 1.15;
+$presentation-h2-font-size: 1.45em;
+$presentation-h3-font-size: 1.1em;
+$body-bg: $paper;
+$body-color: $ink;
+$link-color: $blue;
+$link-color-hover: $red;
+$selection-bg: rgba($blue, .15);
+$code-color: $bluedk;
+$code-block-bg: $codebg;
+$code-block-border-color: transparent;
+$code-block-font-size: 0.7em;
+$presentation-block-margin: 14px;
+
+/*-- scss:rules --*/
+:root {
+  --r-main-font: "Roboto", Helvetica, Arial, sans-serif;
+  --r-heading-font: "Roboto", Helvetica, Arial, sans-serif;
+  --r-code-font: "Roboto Mono", Menlo, Consolas, monospace;
+}
+
+// ---- Frame: top-aligned, thin blue rule under the title (the same rule we ask Gemini for) ----
+.reveal .slides > section, .reveal .slides > section > section { text-align: left; padding: 0 0.6em; }
+.reveal h2 { margin-bottom: 0.35em; padding-bottom: 0.2em; border-bottom: 2px solid $blue; letter-spacing: -0.005em; }
+.reveal p, .reveal li { font-size: 0.9em; }
+.reveal li { margin-bottom: 0.25em; }
+.reveal table { font-size: 0.78em; margin: 0.4em 0; }
+.reveal table th { border-bottom: 2px solid $blue; color: $grey; font-size: 0.85em; text-transform: uppercase; letter-spacing: .06em; }
+.reveal table td { border-bottom: 1px solid $light; vertical-align: top; }
+.reveal .columns { gap: 1.2em; }
+.reveal img, .reveal video { max-height: 520px; }
+.reveal strong { color: $blue; }
+.reveal em { color: $ink; }
+
+// ---- helpers ----
+.reveal .key   { color: $red; font-weight: 700; }
+.reveal .muted { color: $grey; }
+.reveal .small { font-size: 0.7em; }
+.reveal .tiny  { font-size: 0.55em; color: $grey; }
+.reveal .caption { font-size: 0.55em; color: $grey; margin-top: 0.2em; }
+.reveal .shot img { border: 1px solid $light; box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+.reveal .box { background: $light; padding: 0.5em 0.8em; margin: 0.3em 0; }
+.reveal .box.blue { background: $blue; color: #fff; }
+.reveal .box.blue strong { color: #fff; }
+.reveal .note-bad  { border-left: 5px solid $red;  padding: 0.2em 0.7em; margin: 0.4em 0; }
+.reveal .note-good { border-left: 5px solid $blue; padding: 0.2em 0.7em; margin: 0.4em 0; }
+.reveal .swatch { display: inline-block; width: 1.1em; height: 1.1em; vertical-align: middle; margin-right: 0.3em; border: 1px solid $light; }
+.reveal .bigq { font-size: 1.5em; font-weight: 300; color: $blue; line-height: 1.25; margin-top: 1.2em; }
+.reveal .step { display: inline-block; background: $blue; color: #fff; font-weight: 700; padding: 0 0.45em; margin-right: 0.3em; }
+
+// ---- Title slide: blue, logo top-right, text bottom-left ----
+#title-slide { text-align: left; }
+#title-slide .title { color: #fff; font-size: 2.1em; font-weight: 700; margin-top: 3.2em; }
+#title-slide .subtitle { color: #fff; opacity: .9; font-weight: 300; font-size: 1.05em; }
+#title-slide .quarto-title-author-name, #title-slide .date { color: #fff; opacity: .85; font-size: 0.8em; }
+
+// ---- Section slides ----
+.reveal .section-slide h2 { color: #fff; border: 0; font-size: 2em; margin-top: 2.2em; }
+.reveal .section-kicker { display: block; font-size: 0.45em; letter-spacing: .12em; text-transform: uppercase; opacity: .8; font-weight: 400; }
+
+.reveal .slide-number { color: $grey; font-size: 0.5em; }
+.reveal .footer { color: $grey; font-size: 0.45em; }
+#title-slide .subtitle { max-width: 90%; }
+#title-slide .quarto-title-authors { justify-content: flex-start; }
+#title-slide .quarto-title-affiliation, #title-slide .institute { color: #fff; opacity: .85; font-size: 0.7em; }

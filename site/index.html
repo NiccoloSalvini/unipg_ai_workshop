@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>From paper to slides · Lab 3 UNIPG</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF; --paper:#F6F7FA; --ink:#231F20; --ink-2:#4A4F57; --ink-3:#8D8F95;
+  --line:#E8E8E8; --accent:#27348B; --accent-ink:#FFFFFF; --mark:#E30613;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#12141C; --paper:#1B1E29; --ink:#E9EAEE; --ink-2:#B9BCC6; --ink-3:#858995;
+    --line:#2B2F3C; --accent:#8C9AE8; --accent-ink:#10131C; --mark:#FF5A5F;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#12141C; --paper:#1B1E29; --ink:#E9EAEE; --ink-2:#B9BCC6; --ink-3:#858995;
+  --line:#2B2F3C; --accent:#8C9AE8; --accent-ink:#10131C; --mark:#FF5A5F;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Roboto,system-ui,sans-serif;font-size:17px;line-height:1.55}
+.wrap{max-width:820px;margin:0 auto;padding:0 16px}
+header{border-top:8px solid var(--accent);padding:36px 0 24px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:700}
+h1{font-size:clamp(30px,6vw,44px);margin:10px 0 6px;color:var(--accent);line-height:1.1}
+h2{font-size:24px;margin:0 0 8px;color:var(--accent);padding-bottom:4px;border-bottom:2px solid var(--accent)}
+h3{font-size:18px;margin:18px 0 4px}
+section{padding:28px 0 8px}
+a{color:var(--accent)}
+.lede{font-size:19px;font-weight:300;color:var(--ink-2)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btn{display:inline-block;padding:9px 14px;border:1px solid var(--line);border-radius:4px;text-decoration:none;font-weight:700;font-size:15px;color:var(--ink);background:var(--paper)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+code,.mono{font-family:"Roboto Mono",ui-monospace,monospace;font-size:14px}
+.box{background:var(--paper);border-left:4px solid var(--accent);padding:12px 16px;margin:12px 0}
+.box.warn{border-left-color:var(--mark)}
+ol li,ul li{margin-bottom:6px}
+.prompt{border:1px solid var(--line);background:var(--paper);border-radius:6px;padding:14px 16px;margin:14px 0}
+.prompt .bar{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
+.prompt .tag{font-weight:700;color:var(--accent)}
+.prompt pre{margin:0;white-space:pre-wrap;font-family:"Roboto Mono",ui-monospace,monospace;font-size:14px;line-height:1.5}
+.copy{font:inherit;font-size:14px;font-weight:700;padding:6px 12px;border-radius:4px;border:1px solid var(--accent);background:var(--bg);color:var(--accent);cursor:pointer}
+.copy.done{background:var(--accent);color:var(--accent-ink)}
+table{border-collapse:collapse;width:100%;font-size:15px;margin:8px 0}
+th,td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+th{color:var(--ink-3);font-size:12.5px;text-transform:uppercase;letter-spacing:.06em}
+.sw{display:inline-block;width:14px;height:14px;vertical-align:-2px;border:1px solid var(--line);margin-right:4px}
+footer{border-top:1px solid var(--line);margin-top:32px;padding:18px 0 40px;color:var(--ink-3);font-size:14px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="eyebrow">Lab 3 · Research &amp; AI · Università degli Studi di Perugia · 29 September 2026</div>
+  <h1>From paper to slides</h1>
+  <p class="lede">One article, three prompts, three decks. Then compare, keep the best slides, fix them one by one.</p>
+  <div class="btns">
+    <a class="btn primary" href="https://notebook.google.com" target="_blank" rel="noopener">Open Gemini Notebook ↗</a>
+    <a class="btn" href="https://journal.eahn.org/article/7590/galley/21444/download/" target="_blank" rel="noopener">The article (PDF) ↗</a>
+    <a class="btn" href="https://doi.org/10.5334/ah.65" target="_blank" rel="noopener">DOI 10.5334/ah.65 ↗</a>
+    <a class="btn" href="../deck/deck.html" target="_blank" rel="noopener">Slides ↗</a>
+    <a class="btn" href="#examples">Example decks ↓</a>
+  </div>
+  <p style="margin-top:14px;font-size:15px;color:var(--ink-3)">Jo'anne Van Ooijen, <em>Resilient Matters: The Cathedral of Syracuse as an Architectural Palimpsest</em>, Architectural Histories 7(1), 2019. Open access, CC BY.</p>
+</div></header>
+
+<main class="wrap">
+
+<section>
+  <h2>1 · Add the article</h2>
+  <ol>
+    <li>notebook.google.com with your <strong>@unipg.it</strong> account → <em>Create new notebook</em>.</li>
+    <li><em>Add sources → Websites</em> → paste the <strong>direct PDF link</strong>:<br><code>https://journal.eahn.org/article/7590/galley/21444/download/</code></li>
+    <li>Wait for the summary in the centre: if it talks about the Cathedral of Syracuse, the source is in.</li>
+  </ol>
+  <div class="box">With your own PDFs, do the 30-second check first: select a line, copy it, paste it. If it comes out garbled, the model will still answer, with something plausible.</div>
+</section>
+
+<section>
+  <h2>2 · Launch three decks</h2>
+  <p><em>Studio → Presentation</em> opens the customise dialog. Every time:</p>
+  <ol>
+    <li>Format: <strong>Presenter slides</strong> (the right-hand card).</li>
+    <li>Language: <strong>English</strong>.</li>
+    <li>Paste the prompt → <em>Generate</em>. Close the dialog, don't watch the spinner.</li>
+  </ol>
+  <div class="box warn"><strong>Three presentations per account per day.</strong> The dialog forgets format and language every time: set them again. About 7 minutes each; launched together, they finish together.</div>
+
+  <div class="prompt">
+    <div class="bar"><span class="tag">A · minimal</span><button class="copy" data-t="pA">Copy</button></div>
+    <pre id="pA">Create a 7-slide presentation on this article for a non-specialist academic audience.</pre>
+  </div>
+
+  <div class="prompt">
+    <div class="bar"><span class="tag">B · content rules</span><button class="copy" data-t="pB">Copy</button></div>
+    <pre id="pB">Create a 7-slide presentation on this article for a non-specialist academic audience. Rules: use only what is written in the uploaded article; do not add facts, dates, names, numbers or examples that are not in the text. Every slide title is a full sentence stating what the article claims, not a topic label. Where the author is tentative (suggests, may, possibly), keep the same caution; never turn a hypothesis into a proven fact. Do not generate images of places, buildings or people; use only text, simple diagrams or a timeline. The last slide states the limits and open questions the author acknowledges.</pre>
+  </div>
+
+  <div class="prompt">
+    <div class="bar"><span class="tag">C · content rules + UNIPG theme</span><button class="copy" data-t="pC">Copy</button></div>
+    <pre id="pC">Create a 7-slide presentation on this article for a non-specialist academic audience. Rules: use only what is written in the uploaded article; do not add facts, dates, names, numbers or examples that are not in the text. Every slide title is a full sentence stating what the article claims, not a topic label. Where the author is tentative (suggests, may, possibly), keep the same caution; never turn a hypothesis into a proven fact. Do not generate images of places, buildings or people; use only text, simple diagrams or a timeline. The last slide states the limits and open questions the author acknowledges. Visual theme, University of Perugia, apply it to every slide: white background #FFFFFF; titles and main accent in UNIPG blue #27348B; red #E30613 only for one key word per slide; grey #8D8F95 for captions and sources; light grey #E8E8E8 for boxes and table headers. Font: Roboto for everything. A thin blue rule under each title. Keep the top-right corner empty for the university logo. Flat design: no gradients, no shadows, no stock photos.</pre>
+  </div>
+  <p style="font-size:15px;color:var(--ink-2)">A → B changes only the content rules. B → C changes only the look. That is what makes them comparable.</p>
+</section>
+
+<section>
+  <h2>3 · A theme is hex codes and a font</h2>
+  <p>Adjectives ("elegant, institutional, blue") give a different result every time. Codes give the same one.</p>
+  <table>
+    <tr><th>UNIPG</th><th>Value</th><th>Where it came from</th></tr>
+    <tr><td><span class="sw" style="background:#27348B"></span>blue</td><td><code>#27348B</code></td><td rowspan="5">unipg.it: the site's CSS and the logo <code>.svg</code></td></tr>
+    <tr><td><span class="sw" style="background:#E30613"></span>red</td><td><code>#E30613</code></td></tr>
+    <tr><td><span class="sw" style="background:#8D8F95"></span>grey</td><td><code>#8D8F95</code></td></tr>
+    <tr><td><span class="sw" style="background:#E8E8E8"></span>light grey</td><td><code>#E8E8E8</code></td></tr>
+    <tr><td>font</td><td>Roboto</td></tr>
+  </table>
+  <p><strong>For your conference:</strong> the colours are written in its template (<code>.potx</code>, <code>.sty</code>), in its website CSS (browser → Inspect), or in its logo <code>.svg</code> (<code>fill="#…"</code>). Swap them into prompt C.</p>
+</section>
+
+<section>
+  <h2>4 · Check in chat, with the numbers</h2>
+  <div class="prompt">
+    <div class="bar"><span class="tag">Chat · the claims</span><button class="copy" data-t="pK">Copy</button></div>
+    <pre id="pK">Using only the uploaded document, and citing the page for each point: 1. What is the research question? 2. What thesis does the author defend? Write it as one sentence with a verb. 3. What are the three or four claims the thesis rests on? 4. Which limits does the author state explicitly?</pre>
+  </div>
+  <p>Click every number: the passage opens. If it says less than the sentence, that sentence does not go on a slide.</p>
+</section>
+
+<section>
+  <h2>5 · Compare A, B, C: five questions</h2>
+  <table>
+    <tr><th>#</th><th>Look for</th></tr>
+    <tr><td>1</td><td>A <strong>picture of a real place or person</strong> the tool made up</td></tr>
+    <tr><td>2</td><td>A <strong>number or date</strong> you cannot find in the article</td></tr>
+    <tr><td>3</td><td>A title that is a <strong>topic</strong> instead of a <strong>claim</strong></td></tr>
+    <tr><td>4</td><td>A verb <strong>stronger than the text</strong>: suggests → proves. <em>This is the one that matters.</em></td></tr>
+    <tr><td>5</td><td>A <strong>theme</strong> that holds on the first slide only</td></tr>
+  </table>
+  <div class="box">Generated slides are <strong>images</strong>. The text is drawn: read it yourself. We found <em>"Walls of the central Walls of the central nave"</em> on a timeline this morning.</div>
+</section>
+
+<section>
+  <h2>6 · Rivedi: one slide, one instruction</h2>
+  <p>Open a deck → <em>Rivedi</em> → click a slide → one instruction → <em>Generate revised presentation</em>. It makes a copy "(2)", the original stays. About 2 minutes, and it does <strong>not</strong> count toward your three.</p>
+  <ul>
+    <li><code>Shorten the title to at most 10 words, keeping its meaning. Keep layout, colours and text exactly as they are.</code></li>
+    <li><code>Replace the title with: "…". Keep layout and image.</code></li>
+    <li><code>Turn the bullet list into two short sentences. Keep the diagram.</code></li>
+    <li><code>Use the UNIPG blue #27348B for the title only.</code></li>
+  </ul>
+  <div class="box warn">Rivedi does not read the sources. It fixes <strong>how</strong> something is said. <strong>What</strong> is said is fixed in chat, with the citations open.</div>
+  <p>Export: <em>⋮ → Download → PDF</em>. Export every version you like: you cannot rerun one.</p>
+</section>
+
+<section id="examples">
+  <h2>The decks generated this morning</h2>
+  <p>Same article, on an @unipg.it account and on a second account, 29 September 2026. Each PDF is what the tool exported.</p>
+  <table>
+    <tr><th>Deck</th><th>What to look at</th></tr>
+    <tr><td><a href="../generated/A_minimal.pdf">A · minimal prompt</a></td><td>a generated photo of the cathedral: right captions, invented picture</td></tr>
+    <tr><td><a href="../generated/B_content-rules.pdf">B · content rules</a></td><td>titles as claims, the author's "may" kept, diagrams instead of photos</td></tr>
+    <tr><td><a href="../generated/B_content-rules_second-account.pdf">B again · second account</a></td><td>same prompt, different deck: titles back to topic labels</td></tr>
+    <tr><td><a href="../generated/C_unipg-theme_via-rivedi.pdf">C · B restyled with the UNIPG theme via Rivedi</a></td><td>same words as B, only the look changes</td></tr>
+    <tr><td><a href="../generated/C0_limestone-palette.pdf">C0 · B + a limestone palette</a></td><td>hex codes respected; duplicated text inside the timeline image</td></tr>
+    <tr><td><a href="../generated/C0_limestone-palette_rivedi-slide1.pdf">C0 after Rivedi on slide 1</a> · <a href="../generated/C0_limestone-palette_rivedi-slide1.pptx">.pptx</a></td><td>one instruction, one slide changed. The .pptx is seven pictures: no editable text</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>Three rules</h2>
+  <ol>
+    <li><strong>The prompt is the theme file.</strong> Codes, not adjectives. Constraints, not wishes.</li>
+    <li><strong>Rivedi fixes form, the chat fixes content.</strong></li>
+    <li><strong>Every deck is a draw.</strong> Export it, read every slide, keep the good ones.</li>
+  </ol>
+  <p style="font-size:15px;color:var(--ink-2)">Declare it when you use it: <em>"Slides drafted with Gemini Notebook from the author's article, checked and edited by the author."</em></p>
+</section>
+
+</main>
+<footer><div class="wrap">Niccolò Salvini, PhD · Lab 3 "From paper to slides" · Ciclo IA UNIPG · 29 September 2026</div></footer>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=document.getElementById(b.dataset.t).innerText;
+    var done=function(){b.textContent='Copied';b.classList.add('done');setTimeout(function(){b.textContent='Copy';b.classList.remove('done')},1600)};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done,function(){fallback(t);done()})}else{fallback(t);done()}
+  });
+});
+function fallback(t){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}a.remove()}
+</script>
+</body>
+</html>
