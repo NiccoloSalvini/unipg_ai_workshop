@@ -6,16 +6,17 @@ Deck: `deck/deck.html` (online) o `deck/deck.pdf` (chiavetta). Pagina materiali:
 
 ## Scaletta
 
-| Min | Slide | Cosa fai | Cosa fanno loro |
-|---|---|---|---|
-| 0–2 | 1–3 | Who I am, scaletta | ascoltano |
-| 2–12 | 4–10 | Tre modi di fare slide. Mostri **dal vivo** la lezione ESE (slide 7, iframe o link) e la mappa sulle tecnologie. Beamer: 1 minuto. Chiudi su *"il prompt è il file del tema"* | ascoltano |
-| 12–16 | 11–17 | Regola dell'ora, strumento, fonte col link PDF diretto, i tre prompt, il limite di 3 al giorno | **aprono il notebook, caricano il link, lanciano A, B, C** |
-| 16–35 | 18–26 | I sei trucchi sui deck pregenerati (i tuoi, sul notebook UNIPG) | i deck generano; loro fanno il prompt dei claim in chat e cliccano i numeri |
-| 35–50 | 27–29 | Confronto A/B/C con le cinque domande, poi Rivedi slide per slide su C | confrontano, fanno 1–3 Rivedi, esportano PDF |
-| 50–55 | 30 | Tre regole, dichiarazione d'uso | vanno via in orario |
+| Min | Cosa fai | Cosa fanno loro |
+|---|---|---|
+| 0–2 | Who I am, scaletta | ascoltano |
+| 2–12 | Tre modi di fare slide: app, Beamer, HTML. Lezione ESE dal vivo (clic sull'immagine), mappa sulle tecnologie. Chiudi su *"il prompt è il file del tema"* | ascoltano |
+| 12–16 | Regola dell'ora, strumento, fonte col link PDF diretto, piano a due giri, limite di 3 | **giro 1: solo l'articolo, prompt B, Genera** |
+| 16–30 | Trucchi sui tuoi deck: citazioni, A con la cattedrale inventata, deck 1 con le regole, non ripetibilità, "il deck buono diventa fonte", la foto vera | chat dei claim, cliccano i numeri; al 23 circa il deck 1 è pronto: lo controllano |
+| 30–33 | Giro 2 | **aggiungono deck 1 (se regge) e le due foto, prompt C, Genera** |
+| 33–50 | Tema: codici, non aggettivi; il tema che salta sulla slide 4; Rivedi; uscita su Google Slides e watermark | controllano deck 2, 1–3 Rivedi, esportano |
+| 50–55 | Tre regole, dichiarazione d'uso | vanno via in orario |
 
-**Checkpoint unico:** al minuto 16 tutti hanno premuto *Genera* tre volte. Se no, l'assistente passa banco per banco. Chi è indietro lancia solo B e C.
+**Checkpoint:** al 16 tutti hanno lanciato il giro 1; al 33 tutti hanno lanciato il giro 2. Chi è indietro salta il deck 1 come fonte e aggiunge solo le foto.
 
 ## Fatti misurati stamattina (29/9)
 
@@ -28,6 +29,7 @@ Deck: `deck/deck.html` (online) o `deck/deck.pdf` (chiavetta). Pagina materiali:
 - La quota **non** si azzera alle 9:00 (riprovato alle 9:03).
 - Rivedi su 7 slide (cambio tema) dura oltre 13 minuti, non 2: in aula, Rivedi su **una** slide alla volta.
 - Anche il **.pptx** scaricato è fatto di 7 immagini, senza testo modificabile.
+- Un'**immagine non si aggiunge via URL** (i link Wikimedia falliscono): va caricata come file.
 - Stesso prompt B su due account → due deck diversi (uno con titoli-etichetta nonostante la regola).
 
 ## I tuoi deck di demo (notebook UNIPG, "Notebook senza titolo")

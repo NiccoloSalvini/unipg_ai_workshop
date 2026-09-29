@@ -84,3 +84,13 @@ $presentation-block-margin: 14px;
 #title-slide .subtitle { max-width: 90%; }
 #title-slide .quarto-title-authors { justify-content: flex-start; }
 #title-slide .quarto-title-affiliation, #title-slide .institute { color: #fff; opacity: .85; font-size: 0.7em; }
+
+// ---- Part 2 helpers ----
+.reveal .box.blue em, .reveal .box.blue a { color: #fff; }
+.reveal .round { border-top: 6px solid $blue; background: $light; padding: 0.4em 0.8em 0.6em; min-height: 11.5em; }
+.reveal .round.r2 { border-top-color: $red; }
+.reveal .round p { font-size: 0.8em; margin: 0.35em 0; }
+.reveal .round-kicker { display: block; font-size: 0.8em; letter-spacing: .12em; text-transform: uppercase; color: $grey; font-weight: 700; }
+.reveal .bignum { font-size: 8em; font-weight: 700; color: $blue; line-height: 1; margin-top: 0.1em; }
+.reveal .bignum-caption { display: block; font-size: 0.75em; color: $grey; max-width: 14em; }
+.reveal .url-line { font-family: "Roboto Mono", monospace; font-size: 1.15em; color: $blue; white-space: nowrap; margin: 0.6em 0 0.8em; padding: 0.3em 0.5em; background: $light; display: inline-block; }

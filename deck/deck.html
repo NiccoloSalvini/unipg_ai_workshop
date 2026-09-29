@@ -430,9 +430,9 @@ Niccolò Salvini, PhD
 <h2>The next 55 minutes</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 10%">
+<col style="width: 50%">
+<col style="width: 40%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -442,20 +442,25 @@ Niccolò Salvini, PhD
 </tr>
 <tr class="even">
 <td><strong>12–16</strong></td>
-<td>Gemini Notebook in one minute, then you launch three decks</td>
-<td>the same article, three prompts</td>
+<td>Gemini Notebook in one minute, round 1</td>
+<td>one source, one prompt</td>
 </tr>
 <tr class="odd">
-<td><strong>16–35</strong></td>
-<td>Tricks, while your decks are generating</td>
-<td>sources, citations, theme, Rivedi</td>
+<td><strong>16–30</strong></td>
+<td>Tricks, while deck 1 is generating</td>
+<td>citations, rules, the real picture</td>
 </tr>
 <tr class="even">
-<td><strong>35–50</strong></td>
-<td>Compare A · B · C, keep the best slides</td>
-<td>one change at a time</td>
+<td><strong>30–33</strong></td>
+<td>Round 2</td>
+<td>more sources, the UNIPG theme</td>
 </tr>
 <tr class="odd">
+<td><strong>33–50</strong></td>
+<td>Check the theme, Rivedi slide by slide, export</td>
+<td>one slide, one instruction</td>
+</tr>
+<tr class="even">
 <td><strong>50–55</strong></td>
 <td>Three rules to take home</td>
 <td></td>
@@ -473,10 +478,10 @@ Niccolò Salvini, PhD
 <h2>Three families, one question: who decides the layout?</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
+<col style="width: 22%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -635,9 +640,9 @@ Niccolò Salvini, PhD
 <h2>Every route has the same idea: the theme is one place</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 22%">
+<col style="width: 34%">
+<col style="width: 44%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -733,97 +738,76 @@ Niccolò Salvini, PhD
 </div>
 </div></div>
 </section>
-<section id="three-prompts-one-change-at-a-time" class="slide level2">
-<h2>Three prompts, one change at a time</h2>
-<table class="caption-top">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>Prompt</th>
-<th>What changes</th>
-<th>What it isolates</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>A</strong></td>
-<td><em>“Create a 7-slide presentation on this article for a non-specialist academic audience.”</em></td>
-<td>nothing</td>
-<td>what the tool does alone</td>
-</tr>
-<tr class="even">
-<td><strong>B</strong></td>
-<td>A <strong>+ content rules</strong>: only what is in the text, titles as claims, keep the author’s caution, no generated images, last slide = limits</td>
-<td>the content</td>
-<td>hallucination</td>
-</tr>
-<tr class="odd">
-<td><strong>C</strong></td>
-<td>B <strong>+ the UNIPG theme</strong>: four hex codes, Roboto, a blue rule under titles, space for the logo</td>
-<td>only the look</td>
-<td>theme</td>
-</tr>
-</tbody>
-</table>
-<div class="note-good">
-<p>A→B compares content with the look free. B→C compares the look with the content fixed. The full prompts are on the materials page: copy, don’t retype.</p>
-</div>
-</section>
-<section id="you-get-three-decks-a-day.-spend-them-on-purpose." class="slide level2">
-<h2>You get three decks a day. Spend them on purpose.</h2>
+<section id="two-decks-one-resource-at-a-time" class="slide level2">
+<h2>Two decks, one resource at a time</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="box blue">
-<p><strong>3 presentations per account per day</strong></p>
-<p>measured this morning on an <span class="citation" data-cites="unipg.it">@unipg.it</span> account: the fourth attempt says <em>“Hai raggiunto il limite giornaliero di slide”</em>.</p>
+<div class="round">
+<p><span class="round-kicker">Round 1</span></p>
+<p><strong>Sources:</strong> the article, nothing else</p>
+<p><strong>Prompt B:</strong> content rules. Only what is in the text, titles as claims, keep the author’s caution, no generated images, last slide = limits.</p>
+<p>→ <strong>deck 1</strong></p>
 </div>
 </div><div class="column" style="width:50%;">
+<div class="round r2">
+<p><span class="round-kicker">Round 2</span></p>
+<p><strong>Sources:</strong> the article <strong>+ deck 1</strong> (if it passed the check) <strong>+ real photos</strong> of the cathedral</p>
+<p><strong>Prompt C:</strong> B + keep deck 1’s structure + use only the uploaded photos + the UNIPG theme.</p>
+<p>→ <strong>deck 2</strong></p>
+</div>
+</div></div>
+<div class="small">
+<p>One change per round. The third generation of the day stays in your pocket. Deck <strong>A</strong>, the one-line prompt, you only see on my screen: no need to spend a generation on it.</p>
+</div>
+</section>
+<section id="three-decks-a-day" class="slide level2">
+<h2>Three decks a day</h2>
+<div class="columns">
+<div class="column" style="width:38%;">
+<div class="bignum">
+<p>3</p>
+</div>
+<p><span class="bignum-caption">presentations per account per day, measured this morning on <span class="citation" data-cites="unipg.it">@unipg.it</span></span></p>
+</div><div class="column" style="width:62%;">
 <ul>
-<li>A deck takes <strong>about 7 minutes</strong>, three launched together finish together.</li>
-<li><strong>Rivedi</strong> (editing a deck) does <strong>not</strong> count toward the three: about 2 minutes for one slide, 15 for all seven.</li>
-<li>The quota did not come back at 9:00 this morning. Plan as if it is gone for the day.</li>
-<li>So: <strong>A, B, C once each.</strong> Everything after that is Rivedi.</li>
+<li>The 4th attempt: <em>“Hai raggiunto il limite giornaliero di slide”</em>. It did not come back at 9:00.</li>
+<li>A deck takes <strong>about 7 minutes</strong>.</li>
+<li><strong>Rivedi does not count</strong>: ~2 minutes for one slide, ~15 for all seven.</li>
+<li>Plan: <strong>two generations</strong>, one spare. Everything else is Rivedi.</li>
 </ul>
 </div></div>
 </section>
 <section id="everything-you-need-to-copy-is-on-one-page" class="slide level2">
 <h2>Everything you need to copy is on one page</h2>
 <div class="columns">
-<div class="column" style="width:40%;">
+<div class="column" style="width:34%;">
 <p><img data-src="img/qr-materials.svg" style="width:100.0%"></p>
-</div><div class="column" style="width:60%;">
-<div class="bigq">
-<p>niccolosalvini.github.io/<br>unipg_ai_workshop</p>
+</div><div class="column" style="width:66%;">
+<div class="url-line">
+<p>niccolosalvini.github.io/unipg_ai_workshop</p>
 </div>
 <ul>
-<li>the direct link to the article</li>
-<li>prompts <strong>A</strong>, <strong>B</strong>, <strong>C</strong> with a copy button</li>
+<li>the direct link to the article, and the two photos</li>
+<li>prompts <strong>B</strong> and <strong>C</strong>, with a copy button</li>
 <li>the five questions for the comparison, Rivedi examples</li>
 <li>these slides, and the decks generated this morning</li>
 </ul>
 </div></div>
 </section>
-<section id="launch-now-studio-presentation-customise" class="slide level2">
-<h2>Launch now: Studio → Presentation → customise</h2>
+<section id="round-1-launch-now-studio-presentation-customise" class="slide level2">
+<h2>Round 1 · launch now: Studio → Presentation → customise</h2>
 <div class="columns">
 <div class="column" style="width:55%;">
 <p><img data-src="shots/s_pers_empty.jpg" class="shot"></p>
 </div><div class="column" style="width:45%;">
 <p><span class="step">1</span> Format: <strong>Presenter slides</strong>, the right-hand card</p>
 <p><span class="step">2</span> Language: <strong>English</strong></p>
-<p><span class="step">3</span> Paste prompt <strong>A</strong> → <em>Genera</em></p>
-<p><span class="step">4</span> Reopen, same settings, prompt <strong>B</strong> → <em>Genera</em></p>
-<p><span class="step">5</span> Reopen, prompt <strong>C</strong> → <em>Genera</em></p>
+<p><span class="step">3</span> Sources: <strong>only the article</strong></p>
+<p><span class="step">4</span> Paste prompt <strong>B</strong> → <em>Genera</em></p>
 <div class="key">
-<p>The dialog forgets format and language every time. Set them again.</p>
+<p>The dialog forgets format and language every time. Check them before <em>Genera</em>.</p>
 </div>
-<p>Then close it. <strong>Don’t watch the spinner.</strong></p>
+<p>Then close it. <strong>Don’t watch the spinner</strong>: 7 minutes of tricks start now.</p>
 </div></div>
 </section>
 <section id="part-3-tricks-while-your-decks-are-generating" class="slide level2 section-slide" data-background-color="#27348B">
@@ -855,8 +839,8 @@ Niccolò Salvini, PhD
 </div>
 </div></div>
 </section>
-<section id="trick-3-rules-work-on-content.-here-is-deck-b." class="slide level2">
-<h2>Trick 3 · Rules work on content. Here is deck B.</h2>
+<section id="trick-3-rules-work-on-content.-here-is-deck-1." class="slide level2">
+<h2>Trick 3 · Rules work on content. Here is deck 1.</h2>
 <div class="columns">
 <div class="column" style="width:64%;">
 <p><img data-src="gen/B_unipg_1.jpg" class="shot"></p>
@@ -884,13 +868,63 @@ Niccolò Salvini, PhD
 <p><strong>Style you can steer. Structure you cannot reproduce.</strong> Every generation is a new draw. That is why we compare decks and keep slides, instead of hoping the next run is the right one.</p>
 </div>
 </section>
+<section id="trick-a-deck-that-passed-the-check-becomes-a-source" class="slide level2">
+<h2>Trick · A deck that passed the check becomes a source</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ol type="1">
+<li>Deck 1 ready → read every slide with the five questions</li>
+<li>If it holds: <strong>⋮ → Download → PDF</strong></li>
+<li><strong>Add sources → Upload file</strong> → the PDF</li>
+<li>In prompt C: <em>“keep the order and the titles of the uploaded deck”</em></li>
+</ol>
+</div><div class="column" style="width:50%;">
+<div class="note-good">
+<p>Round 2 starts from something you already checked, instead of from a new draw.</p>
+</div>
+<div class="note-bad">
+<p>Once uploaded, the deck <strong>is a source</strong>: the model treats it as true as the article. Upload it only after you checked it, or its mistakes come back with a citation number.</p>
+</div>
+</div></div>
+</section>
+<section id="trick-give-it-the-real-picture-instead-of-letting-it-draw-one" class="slide level2">
+<h2>Trick · Give it the real picture instead of letting it draw one</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="../fonti/duomo_siracusa_facciata.jpg" class="shot"> <span class="caption">Façade, Guillaume, CC BY 2.0, Wikimedia Commons</span></p>
+</div><div class="column" style="width:50%;">
+<p>Deck A drew a cathedral. The real one is on Wikimedia Commons, with a licence.</p>
+<ul>
+<li><strong>Add sources → Upload file</strong> → the photo. An image <strong>cannot</strong> be added by URL: the link fails.</li>
+<li>In prompt C: <em>“for the cathedral use only the uploaded photographs, credited on the slide; never generate an image of the building”</em></li>
+</ul>
+<div class="muted small">
+<p>Both photos, with credits, are on the materials page.</p>
+</div>
+</div></div>
+</section>
+<section id="round-2-launch-more-sources-prompt-c" class="slide level2">
+<h2>Round 2 · launch: more sources, prompt C</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="step">1</span> <strong>Add sources</strong>: deck 1 PDF (if it passed), the two photos</p>
+<p><span class="step">2</span> Studio → Presentation → <strong>Presenter slides</strong>, <strong>English</strong></p>
+<p><span class="step">3</span> Sources: <strong>all of them</strong></p>
+<p><span class="step">4</span> Paste prompt <strong>C</strong> → <em>Genera</em></p>
+</div><div class="column" style="width:50%;">
+<div class="box">
+<p><strong>Prompt C</strong> = prompt B, plus:</p>
+<p><em>keep the order and titles of the uploaded deck · for the cathedral use only the uploaded photographs, credited · UNIPG theme: <code>#27348B</code>, <code>#E30613</code>, <code>#8D8F95</code>, <code>#E8E8E8</code>, Roboto, a thin blue rule under each title</em></p>
+</div>
+</div></div>
+</section>
 <section id="trick-4-a-theme-is-hex-codes-and-a-font-not-adjectives" class="slide level2">
 <h2>Trick 4 · A theme is hex codes and a font, not adjectives</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="gen/B_unipg_1.jpg" class="shot"> <span class="caption">Deck B</span></p>
+<p><img data-src="gen/B_unipg_1.jpg" class="shot"> <span class="caption">Deck 1 (prompt B)</span></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="gen/C_unipg_1.jpg" class="shot"> <span class="caption">Deck B + the UNIPG theme: <code>#27348B</code>, <code>#E30613</code>, <code>#8D8F95</code>, <code>#E8E8E8</code>, Roboto, a blue rule. Same words.</span></p>
+<p><img data-src="gen/C_unipg_1.jpg" class="shot"> <span class="caption">The same deck + the UNIPG theme: <code>#27348B</code>, <code>#E30613</code>, <code>#8D8F95</code>, <code>#E8E8E8</code>, Roboto, a blue rule. Same words.</span></p>
 </div></div>
 <div class="small">
 <p><strong>“Elegant, institutional, blue”</strong> gives a different blue every time. <strong><code>#27348B</code>, Roboto</strong> gives the same one. Your conference’s codes are in its template (<code>.potx</code>, <code>.sty</code>), its website CSS (Inspect), or its logo <code>.svg</code> (<code>fill="#…"</code>).</p>
@@ -903,7 +937,7 @@ Niccolò Salvini, PhD
 <p><img data-src="gen/C_unipg_4.jpg" class="shot"> <span class="caption">Slide 4 of the same deck</span></p>
 </div><div class="column" style="width:40%;">
 <p>Slides 1, 2, 3, 5, 6, 7: blue sans-serif titles, one red word.</p>
-<p>Slide 4: <strong>serif, black title</strong>, as in deck B. The theme did not reach it.</p>
+<p>Slide 4: <strong>serif, black title</strong>, as before the theme. The theme did not reach it.</p>
 <p>Also: grey boxes in the top-right corner, where we asked for <em>empty</em>.</p>
 <div class="note-good">
 <p>Fix: Rivedi on slide 4 alone, same instruction. One slide, two minutes.</p>
@@ -962,13 +996,13 @@ Niccolò Salvini, PhD
 <section id="part-4-compare-keep-export" class="slide level2 section-slide" data-background-color="#27348B">
 <h2><span class="section-kicker">Part 4</span> Compare, keep, export</h2>
 </section>
-<section id="put-a-b-and-c-side-by-side-and-look-for-five-things" class="slide level2">
-<h2>Put A, B and C side by side, and look for five things</h2>
+<section id="put-the-decks-side-by-side-and-look-for-five-things" class="slide level2">
+<h2>Put the decks side by side, and look for five things</h2>
 <table class="caption-top">
 <colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
+<col style="width: 5%">
+<col style="width: 70%">
+<col style="width: 25%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -981,27 +1015,27 @@ Niccolò Salvini, PhD
 <tr class="odd">
 <td>1</td>
 <td>Is there a <strong>picture of a real place or person</strong> the tool made up?</td>
-<td>A</td>
+<td>deck A</td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>Is there a <strong>number or date</strong> you cannot find in the article?</td>
-<td>A</td>
+<td>deck A</td>
 </tr>
 <tr class="odd">
 <td>3</td>
 <td>Is a title a <strong>topic</strong> instead of a <strong>claim</strong>?</td>
-<td>anywhere, even B</td>
+<td>anywhere, even deck 1</td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>Does a verb go <strong>stronger than the text</strong>: <em>suggests</em> → <em>proves</em>?</td>
-<td>A, sometimes B</td>
+<td>deck A, sometimes deck 1</td>
 </tr>
 <tr class="odd">
 <td>5</td>
 <td>Did the <strong>theme</strong> hold on every slide, or only on the first?</td>
-<td>C</td>
+<td>deck 2</td>
 </tr>
 </tbody>
 </table>
@@ -1012,15 +1046,38 @@ Niccolò Salvini, PhD
 <section id="keep-the-best-slides-fix-them-one-by-one-export" class="slide level2">
 <h2>Keep the best slides, fix them one by one, export</h2>
 <div class="columns">
-<div class="column" style="width:55%;">
+<div class="column" style="width:50%;">
 <p><img data-src="shots/s_export.jpg" class="shot"></p>
-</div><div class="column" style="width:45%;">
+</div><div class="column" style="width:50%;">
 <ol type="1">
-<li>Pick <strong>one deck to keep</strong>, usually C.</li>
-<li>For each slide that fails the five questions: <strong>Rivedi</strong>, one instruction per slide.</li>
-<li>If a slide from A or B is better: say so in Rivedi (<em>“replace slide 4 with a timeline of…”</em>). The tool cannot paste across decks.</li>
-<li><strong>⋮ → Scarica → PDF.</strong> Export every version you like: versions are free, you cannot rerun one.</li>
+<li>Keep <strong>one deck</strong>, usually deck 2.</li>
+<li>Every slide that fails the five questions: <strong>Rivedi</strong>, one instruction per slide.</li>
+<li>A better slide in deck 1? Say it in Rivedi (<em>“replace slide 4 with a timeline of…”</em>). The tool cannot paste across decks.</li>
+<li><strong>⋮ → Download → PDF</strong>, every version you like: you cannot rerun one.</li>
 </ol>
+</div></div>
+</section>
+<section id="then-most-people-take-it-out-to-google-slides" class="slide level2">
+<h2>Then most people take it out to Google Slides</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ol type="1">
+<li><strong>⋮ → Download → PowerPoint (.pptx)</strong></li>
+<li>Google Drive → <strong>Open with Google Slides</strong>, or in your deck <em>File → Import slides</em></li>
+<li>Add your logo, your notes, your own slides around it</li>
+</ol>
+<div class="note-bad">
+<p>Each slide arrives as <strong>one picture</strong>: no text boxes. You edit around it, not inside it.</p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>The watermark.</strong> Every slide carries a small <em>Gemini Notebook</em> badge bottom right, and the images carry <strong>SynthID</strong>, an invisible watermark.</p>
+<ul>
+<li>In Slides you can cover or crop the badge.</li>
+<li>SynthID stays in the pixels. It is how a generated image can still be recognised.</li>
+</ul>
+<div class="box">
+<p>Removing the badge is cosmetic. <strong>Declaring the use is not optional</strong>: see the last slide.</p>
+</div>
 </div></div>
 </section>
 <section id="three-rules-to-take-home" class="slide level2">
